@@ -1,0 +1,294 @@
+/* Template CSS */
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+header {
+  background-color: black;
+  color:white;
+  padding:30px;
+  /* display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; */
+}
+nav {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-between;
+
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+  font-size: 25pt;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  padding:20px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 3px;
+  border: 3px solid rgb(73, 121, 54);
+  color: rgb(73, 121, 54);
+
+}
+
+.gallery_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery_container>img{
+   width:33%;
+   /*Not the > sets parent child relationships. Here you dont have to set it as parent and child*/
+}
+footer {
+  background-color: black;
+  color: white;
+  padding:25px;
+  margin-top: 30px;
+}
+/* Custom CSS */
+.page_intro {
+  /* padding:50px; */
+  display: flex;
+  flex-direction: column;
+  column-gap: 0px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.page_intro_img {
+  width:100%;
+
+}
+.page_intro_header {
+  padding: 40px;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 400px;
+  border-bottom-left-radius: 400px;
+  border-bottom-right-radius: 25%;
+  background-color: rgb(73, 121, 54);
+  /* background-color: rgb(119, 152, 215); */
+  color: white;
+  width: 75%;
+  text-align: center;
+  font-size: 40px;
+}
+.top_donation_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+
+}
+.donation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  padding:20px;
+  /* height: 350px; */
+
+
+}
+.donation_img {
+  width:75%;
+
+}
+.donation_card {
+  padding:10px;
+  text-align: center;
+}
+.donation_card a {
+  font-size: 14pt;
+  color:rgb(73, 121, 54);
+  padding: 3px;
+}
+.donate_action {
+    box-sizing: border-box;
+  align-items: right;
+}
+.donate_action a {
+  text-decoration: none;
+  color:white;
+    background-color: rgb(73, 121, 54);
+    border: 3px solid rgb(73, 121, 54);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 3px;
+    padding:10px;
+}
+.middle_page {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-between;
+  padding:0px;
+}
+.middle_left {
+  display: flex;
+  flex-direction: column;
+  justify-content:  flex-start;
+  align-items: center;
+  flex-basis: 300px;
+
+}
+
+.middle_left h2 {
+  padding-bottom: 20px;
+  font-size: 25pt;
+  text-align: center;
+}
+.ad_bar_img {
+  width:100%;
+}
+.shop_action {
+  padding: 30px;
+}
+.shop_action a {
+  text-decoration: none;
+  color:white;
+    background-color: rgb(73, 121, 54);
+    border: 3px solid rgb(73, 121, 54);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 3px;
+    padding:25px;
+}
+.middle_right {
+  flex-grow:8;
+  flex-shrink: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:  flex-start;
+
+}
+.middle_right_article {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: flex-start;
+ background-color: white;
+ padding: 20px;
+}
+.article_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.article_right_img {
+  width: 35%;
+  padding: 10px;
+}
+.article_title {
+  padding: 20px;
+}
+.article_right{
+  padding:50px;
+}
+.visit_action {
+  padding: 10px;
+}
+.visit_action a {
+  text-decoration: none;
+  color:white;
+    background-color: rgb(22, 70, 212);
+    border: 3px solid rgb(22, 70, 212);
+    border-radius: 3px;
+    padding:10px;
+}
+.community_action_call {
+  font-size: 30pt;
+  padding-bottom: 60px;
+}
+.community_action a{
+  text-decoration: none;
+  color:white;
+    background-color: rgb(73, 121, 54);
+    border: 3px solid rgb(73, 121, 54);
+    border-radius: 3px;
+    padding:10px;
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+.top_donation_bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding:10px;
+}
+.donation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.donation_img {
+  width: 85%;
+}
+.donation_card {
+  padding-bottom: 40px;
+}
+.donate_action {
+  font-size: 30pt;
+  padding-bottom: 30px;
+}
+.donate_action a {
+  padding: 25px;
+  padding: 20px;
+}
+.middle_page {
+  flex-direction: column;
+}
+ /* .ad_img_container {
+  display: grid;
+  grid-row: auto auto auto;
+
+} */
+  .ad_img_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width:80%;
+  margin: auto;
+}
+.ad_bar_img {
+  width: 50%;
+}
+.middle_right_article {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.article_right_img {
+
+  width:65%;
+}
+
+}
